@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start-server": "http-server ./pages -p 8080",
-    "test": "npx nightwatch ./test/",
+    "test": "npx nightwatch ./test/ --chrome",
     "ci-test": "start-server-and-test start-server http://127.0.0.1:8080 test"
   },
   "author": "Aniket Singh Rawat",
