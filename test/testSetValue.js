@@ -34,7 +34,7 @@ describe('Nightwatch setValue() Command Tests', function() {
   
     it('should set value in a date input', async function({element, assert}) {
       const input = element('#date-input');
-      await input.setValue('15/05/2023');
+      await input.setValue('15-05-2023');
       const value = await input.getValue();
       assert.strictEqual(value, '2023-05-15', 'Date was set correctly in date input');
     });
